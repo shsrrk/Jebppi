@@ -20,25 +20,21 @@
 
             <div class="join-title"><span>회원가입</span></div>
 
-            <form action="Signupok.jsp" name="signup" method="post">
-	
-                <div class="input-area">
-                    <div class="input-column"><span>이름</span><input class="input" type="text" name="username"></div><br>
-                    
-                    <div class="input-column"><span>아이디</span><input class="input" type="text" name="userid"></div><br>
-                    
-                    <div class="input-column"><span>비밀번호</span><input class="input" type="password" name="userpw"></div><br>
-                    
-                    <div class="input-column"><span>비밀번호 확인</span><input class="input" type="password" name="userpwcheck"></div>
-                </div>
 
-                <div class="content">
+            
+            <form action="addMessageAction.jsp" method="post">
+                <div id="message-container">
+                    <input name="message" type="text" placeholder="message">
+                    <input type="submit" value="작성">
+                </div>
+            </form>
+            
+
+
+            <div class="content">
                     <div class="photo"></div>
                     <div class="welcome"><span>어머 자기 처음왔나보네~</span></div>
-                </div>
-
-                <div class="sm"><input class="smtxt" type="submit" value="가입하기"></div>
-            </form>
+            </div>
         </div>
 
     <script src="./join.js"></script>
