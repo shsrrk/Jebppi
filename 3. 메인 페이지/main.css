@@ -67,6 +67,21 @@ body{
 
 
 /*창 포맷*/
+.wboxf{
+    top: 50%;
+    left: 50%;
+	right:  50%; 
+	transform: translate(-50%, -80%);
+
+    padding: 2px;
+    border: solid 2px #414141;
+    position: absolute;
+    width: 1196px;
+    height: 554px;
+
+    background-color: #B0B0AE;
+}
+
 .header{
     padding: 3px;
     text-align: center;
@@ -109,22 +124,6 @@ body{
     width: 28px;
     height: 28px;
 }
-
-.wboxf{
-    top: 50%;
-    left: 50%;
-	right:  50%; 
-	transform: translate(-50%, -50%);
-
-    padding: 2px;
-    border: solid 2px #414141;
-    position: absolute;
-    width: 1196px;
-    height: 554px;
-
-    background-color: #B0B0AE;
-}
-
 /*창 포맷 여기까지*/
 
 
@@ -135,11 +134,12 @@ body{
 .content{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 336px;
-    padding: 9px;
+    padding-top: 7px;
 }
 
+
+
+/*박진영 히든 짤 여기까지*/
 .hidden-photo-area{
     display: flex;
     flex-direction: column;
@@ -153,7 +153,7 @@ body{
     height: 375px;
     width: 305px;
     margin: 0 auto;
-    margin-top: 26px;
+    margin-top: 28px;
 }
 
 .hidden-photo-title{
@@ -162,39 +162,221 @@ body{
     text-align: center;
     width: 255px;
     height: 47px;
-    color: #D9D9D9;
+    background-color: #D9D9D9;
+    margin-top: 12px;
+    padding-top: 12px;
 }
 
 .hidden-photo-title > span{
     font-size: 34px;
 }
+/*박진영 히든 짤 여기까지*/
 
 
 
-.photo{
-    background-image: url(../contents/joinphoto.png);
-    background-size: 492px;
-    height: 251px;
-    width: 492px;
-    margin: 0 auto;
-    margin-top: 26px;
-    margin-bottom: 15px;
+/*박진영 메인 사진 + 아이디*/
+/*메인 사진 탑*/
+.main-area{
+    width: 830px;
+}
+.main-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-photo-title{
+    width: 223px;
+    height: 47px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
 }
 
 
-.welcome{
-    bottom: 0px;
-    font-size: 20px;
+.main-photo-title > span{
+    font-size: 34px;
+}
 
-    width: 100%;
-    height: 33px;
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user > span{
+    font-size: 34px;
+}
+#m-u-name{
+    text-decoration: underline;
+    margin-right: 10px;
+    font-style: italic;
+    color: #2B1B5E;
+}
+/*메인 사진 탑*/
+
+/*메인 사진*/
+.main-photo{
+    background-image: url(../contents/main_photo.png);
+    background-size: 830px;
+    height: 439px;
+    width: 830px;
+    margin: 0 auto;
+    margin-top: 4px;
+}
+/*메인 여기까지*/
+
+
+/* 정보창 */
+.information{
+    top: 50%;
+    left: 50%;
+	right:  50%; 
+	transform: translate(-169%, -78%);
+
+    padding: 2px;
+    border: solid 2px #414141;
+    position: absolute;
+    width: 346px;
+    height: 490px;
+
+    background-color: #B0B0AE;
+
+    z-index: 1;
+}
+
+.information-header{
+    padding: 3px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 48px;
+    background: #2B1B5E;
+    cursor: default;
+
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+
+
+    display: flex;
+    flex-direction: row;
+}
+
+.information-close-area{
+    width: 40px;
+    height: 40px;
+    background: #CECFC1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#my-div{
+    display: flex;
+}
+
+.hidden-delete{
+    font-size: 24px;
+    color: #7E7E7E;
+}
+
+.information-detail{
+    font-size: 24px;
+    padding: 0 10px;
+}
+
+.inform-title{
+    font-size: 40px;
+    line-height: 1.8;
+}
+.element{
+    font-size: 32px;
+}
+
+.jyp-home{
+    width: 320px;
+    height: 170px;
+    background-color: #3A257C;
+    font-size: 40px;
+    color: white;
+
+    margin: 0 auto;
+    margin-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.information > a{
+    text-decoration: none;
+}
+/* 정보창 여기까지 */
+
+
+
+
+
+
+
+
+/* 메인메뉴 */
+/* 메인메뉴 창 */
+.main-menu-area{
+    top: 50%;
+    left: 50%;
+	right:  50%; 
+	transform: translate(-50%, 40%);
+
+    padding: 2px;
+    border: solid 2px #414141;
+    position: absolute;
+    width: 1196px;
+    height: 290px;
+
+    background-color: #B0B0AE;
+}
+
+.menu-header{
+    padding: 3px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    font-size: 48px;
+    background: #2B1B5E;
+    cursor: default;
+
+    justify-content: space-between;
+    align-items: center;
+
+    display: flex;
+}
+/* 창 여기까지 */
+
+.menu-area{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4px;
+}
+
+.menu{
+    width: 390px;
+    height: 223px;
+
+    margin-top: 6px;
 
     background-color: #D9D9D9;
+    flex-direction: column;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.welcome > span{
-    margin-left: 60px;
-    vertical-align: sub;
-    color: rgb(0, 0, 0);
+.title-span{
+    font-size: 64px;
 }
-/*컨텐츠 내용*/
+
+
