@@ -37,7 +37,7 @@
         </div>
         
 
-        <div class="information">
+        <div class="information" id="information-w">
             <div class="information-header">
                     <div class="hidden-delete">HIDDEN 컷 보기 >></div>
                     <div class="information-close-area" id="close-button"><div class="close"></div></div>
@@ -76,7 +76,7 @@
             </div>
 
             <div class="menu-area">
-                <div class="menu">
+                <div class="menu" id="menu-chat">
                     <span class="title-span">방명록</span></br>
                     <span>soulmate들과</span><span>대화를 나눠보세요~!</span> 
                 </div>
@@ -88,6 +88,43 @@
                     <span class="title-span">공지사항</span></br>
                     <span>진영씨의 스케줄</span>
                 </div>
+            </div>
+        </div>
+
+
+        <div id="chat-wboxf">
+            <div class="chat-header">
+                <div class="title-area">
+                    <div class="logo"></div>
+                    <div class="title">Jebppi</div>
+                </div>
+                <div>
+                    <div id="chat-close-area"><div class="close"></div></div>
+                </div>
+            </div>
+
+            <div class="chat-w">
+                <div class="chat">
+                    <span class="detail">박진영사생팬: 방가방가</span><span class="date">24.06.17 15:30</span>
+                </div>
+            </div>
+
+
+
+            <div id="input-form">
+                <form action="addMessageAction.jsp" method="post">
+                    <div id="message-container">
+                        <input class="message-input" name="message" type="text">
+
+                        <div class="right">
+                            <div class="capture">
+                                <div class="capture-icon"></div>
+                                <span>대화저장</span>
+                            </div>
+                            <div class="sm"><input class="smtxt" type="submit" value="작성"></div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

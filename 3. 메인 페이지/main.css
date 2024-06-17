@@ -116,6 +116,7 @@ body{
     display: flex;
     justify-content: center;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .close{
@@ -270,6 +271,7 @@ body{
     align-items: center;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 #my-div{
@@ -373,10 +375,161 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
+
 
 .title-span{
     font-size: 64px;
+}
+
+
+
+
+
+
+.구분{
+}
+
+
+
+
+/*방명록 창*/
+#chat-close-area{
+    width: 40px;
+    height: 40px;
+    background: #CECFC1;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#chat-wboxf{
+    top: 50%;
+    left: 50%;
+	right:  50%; 
+	transform: translate(-50%, -50%);
+
+    padding: 2px;
+    border: solid 2px #414141;
+    position: absolute;
+    width: 571px;
+    height: 804px;
+
+    background-color: #B0B0AE;
+
+    display: none;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.chat-header{
+    padding: 3px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    font-size: 48px;
+    background: #2B1B5E;
+    cursor: default;
+
+    justify-content: space-between;
+    align-items: center;
+
+    display: flex;
+}
+
+/*창 포맷 여기까지*/
+
+
+/*채팅창*/
+.chat-w{
+    width: 547px;
+    height: 582px;
+    background-color: #D9D9D9;
+    font-size: 24px;
+
+    padding: 0 3px;
+    
+    margin: 6px auto;
+}
+
+.chat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: end;
+    padding: 8px 12px;
+}
+
+.date{
+    font-size: 14px;
+    color: #545454;
+
+}
+/*대화저장+전송*/
+.right{
+    width: 122px;
+    height: 136px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.capture{
+    width: 117px;
+    height: 24px;
+    font-size: 24px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.capture-icon{
+    background-image: url(../contents/capture-icon.png);
+    width: 25px;
+    height: 24px;
+    background-size: 24px;
+}
+
+
+
+
+
+
+/*메세지 전송 폼*/
+#message-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0 6px;
+    margin-top: 8px;
+}
+
+.message-input{
+    width: 420px;
+    height: 130px;
+}
+
+
+/*전송 버튼*/
+.sm{
+    display: flex;
+    justify-content: flex-end;
+}
+.smtxt{
+    width: 122px;
+    height: 95px;
+
+    font-size: 48px;
+    
+    color: #2B1B5E;
+    background-color: #ffffff8a;
 }
 
 

@@ -75,25 +75,26 @@ function onMoveMenu(e) {
 
 
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   const hiddenDelete = document.querySelector('.hidden-delete');
-//   const informationDetail = document.querySelector('.information-detail');
 
-//   hiddenDelete.addEventListener('click', function() {
-//     // Toggle visibility of information detail
-//     informationDetail.classList.toggle('visible');
+// 정보창 지우기
+document.addEventListener('DOMContentLoaded', function() {
+  const close = document.getElementById('close-button');
+  const information = document.getElementById('information-w');
 
-//     // Change text of hidden-delete based on visibility
-//     if (informationDetail.classList.contains('visible')) {
-//       hiddenDelete.textContent = 'HIDDEN 컷 숨기기 <<';
-//     } else {
-//       hiddenDelete.textContent = 'HIDDEN 컷 보기 >>';
-//     }
-//   });
-// });
-
+  close.addEventListener('click', function() {
+    // Toggle display property of the div
+    if (information.style.display === 'none') {
+      information.style.display = 'block'; // or 'flex', depending on your layout
+    } else {
+      information.style.display = 'none';
+    }
+  });
+});
 
 
+
+
+//메뉴 창 옮기기
 const inform = document.querySelector(".information");
 const informh = document.querySelector(".information-header");
 let lastiX = 0;
@@ -121,7 +122,7 @@ function onRemoveEventinform() {
 function onMoveinform(e) { 
   e.preventDefault(); 
   lastiX = startiX - e.clientX; 
-  lastmY = startiY - e.clientY; 
+  lastiY = startiY - e.clientY; 
 
   startiX = e.clientX; 
   startiY = e.clientY; 
@@ -130,3 +131,76 @@ function onMoveinform(e) {
   inform.style.left = `${inform.offsetLeft - lastiX}px`;
 }
 
+
+
+
+
+
+//방명록
+document.addEventListener('DOMContentLoaded', function() {
+  const chatclose = document.getElementById('chat-close-area');
+  const chat = document.getElementById('chat-wboxf');
+
+  chatclose.addEventListener('click', function() {
+    // Toggle display property of the div
+    if (chat.style.display === 'none') {
+      chat.style.display = 'flex'; // or 'flex', depending on your layout
+    } else {
+      chat.style.display = 'none';
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const mchat = document.getElementById('menu-chat');
+  const chat = document.getElementById('chat-wboxf');
+
+  mchat.addEventListener('click', function() {
+    // Toggle display property of the div
+    if (chat.style.display === 'none') {
+      chat.style.display = 'flex'; // or 'flex', depending on your layout
+    } else {
+      chat.style.display = 'flex';
+    }
+  });
+});
+
+
+
+
+
+const chat = document.getElementById("chat-wboxf");
+const chath = document.querySelector(".chat-header");
+let lastcX = 0;
+let lastcY = 0; 
+let startcX = 0; 
+let startcY = 0; 
+
+chath.addEventListener('mousedown', function(e){
+  e.preventDefault(); 
+  startcX = e.clientX; 
+  startcY = e.clientY; 
+	
+  chath.classList.add('active');
+  
+  document.addEventListener('mouseup', onRemoveEventchat); 
+  document.addEventListener('mousemove', onMovechat); 
+});
+
+function onRemoveEventchat() { 
+  chath.classList.remove('active');
+  document.removeEventListener('mouseup', onRemoveEventchat); 
+  document.removeEventListener('mousemove', onMovechat); 
+} 
+
+function onMovechat(e) { 
+  e.preventDefault(); 
+  lastcX = startcX - e.clientX; 
+  lastcY = startcY - e.clientY; 
+
+  startcX = e.clientX; 
+  startcY = e.clientY; 
+
+  chat.style.top = `${chat.offsetTop - lastcY}px`;
+  chat.style.left = `${chat.offsetLeft - lastcX}px`;
+}
