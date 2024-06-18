@@ -69,3 +69,64 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
+
+.banner{
+	width: 1400px;
+	height: 217px;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	margin: 0 auto;
+}
+
+.banner-photo{
+	width: 310px;
+	background-image: url(../contents/베너.png);
+	background-size: 310px;
+	height: 217px;
+}
+
+.banner-title{
+	width: 1092px;
+	height: 217px;
+	
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+
+	background: linear-gradient(to right, #000000, #9E00FF);
+}
+
+
+.banner-title > #span1{
+	font-size: 128px;
+	color: #FFFFFF;
+	margin-top: 20px;
+}
+
+.banner-title > #span2{
+	font-size: 32px;
+
+	color: #E58DBC;
+	text-shadow: #F90300;
+}
+
+.contents{
+	margin: 0 auto;
+	margin-top: 7px;
+
+	width: 1400px;
+	height: 831px;
+
+	background-color: #FF217E;
+}
+
+.contents-header{
+	width: 1400px;
+	height: 55px;
+
+	background: linear-gradient(to right, #2B1B5E, #3A257D 2%, #3A257D 98%,#2B1B5E 100%);
+}
