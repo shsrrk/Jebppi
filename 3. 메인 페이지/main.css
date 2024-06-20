@@ -312,9 +312,11 @@ body{
     justify-content: center;
 }
 
-.information > a{
+a{
     text-decoration: none;
 }
+
+
 /* 정보창 여기까지 */
 
 
@@ -381,6 +383,10 @@ body{
 
 .title-span{
     font-size: 64px;
+}
+
+.menu > span{
+    color: black;
 }
 
 

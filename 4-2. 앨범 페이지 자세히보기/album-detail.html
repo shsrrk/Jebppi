@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jebppi</title>
+    <link rel="stylesheet" href="./album-detail.css">
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <div class="banner-photo"></div>
+            <div class="banner-title">
+                <span id="span1">JEBPPI's PHOTOS</span>
+                <span id="span2">그와 우리만의 비밀 공간 ❤</span>
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="contents-header">
+                <div class="contents-header">
+                    <span><a href="">< 홈으로 가기</a></span>
+                    <div class="notice-writer">
+                        <span>작성자:</span><span></span>
+                        <span>|</span>
+                        <span>작성일:</span><span></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div  class="main-area">
+                <div class="preview-area">
+                    <div class="preview-photo"></div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-area">
+                        <span>진영아사랑해 : 와 생각만해도 설레 그런데 여기서 줄바꿈을 하는 아주 긴 문장이 나오면 어떻게 되는 거죠? 그걸 해결하기 위해 제가 있습니다!</span><br>
+                        <span>진영아사랑해 : 와 생각만해도 설레</span><br>
+                        <span>진영아사랑해 : 와 생각만해도 설레</span><br>
+                        <span>진영아사랑해 : 와 생각만해도 설레</span><br>
+                    </div>
+
+                    <form id="commentForm_<%= photoId %>" method="post">
+                        <!-- 숨겨진 필드에 사진 ID를 저장 -->
+                        <input type="hidden" name="photoId" value="<%= photoId %>">
+                        <!-- 댓글 입력 필드 -->
+                        <div class="comment-s-area">
+                            <input type="text" name="comment" placeholder="댓글을 입력하세요">
+                        <!-- 댓글 작성 버튼 -->
+                            <button type="submit">댓글 작성</button>
+                        </div>
+                    </form>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <script src="./album-detail.js"></script>
+</body>
+</html>

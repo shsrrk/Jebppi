@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jebppi</title>
+    <link rel="stylesheet" href="./notice-write.css">
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <div class="banner-photo"></div>
+            <div class="banner-title">
+                <span id="span1">JEBPPI's 공지</span>
+                <span id="span2">각종 이벤트, 콘서트 일정등을 공유하는 공간입니다.</span>
+            </div>
+        </div>
+
+        <div class="photo-upload">
+            <div class="contents-header">
+                <span><a href="">< 공지페이지로 가기</a></span>
+            </div>
+                <div class="write">
+                    <form action="PostNotice.jsp" method="post">
+                        <table>
+                            <tr class="title trlow t-t">
+                                <td><label for="noticeTitle">제목:</label></td>
+                                <!-- <%-- 제목 입력 필드 --%> -->
+                                <td><input type="text" class="input" id="noticeTitle" name="noticeTitle" required></td>
+                            </tr>
+                            <tr class="trlow a-t">
+                                <td><label for="author">작성자:</label></td>
+                                <!-- <%-- 작성자 입력 필드 (고정값) --%> -->
+                                <td><input type="text"  class="input" id="author" name="author" value="젭삐마스터" readonly></td>
+                            </tr>
+                            <tr class="detail trlow c-t">
+                                <td><label for="noticeContent">내용:</label></td>
+                                <!-- <%-- 내용 입력 필드 --%> -->
+                                <td><textarea id="noticeContent" class="input" name="noticeContent" rows="4" cols="50" required></textarea></td>
+                            </tr>
+                        </table>
+                        <div class="upload">  
+                            <!-- <%-- 작성 및 취소 버튼 --%> -->
+                            <button type="submit">작성</button>
+                            <button type="reset" class="btn-reset">초기화</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./notice-write.js"></script>
+</body>
+</html>

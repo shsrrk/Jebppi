@@ -143,7 +143,6 @@ body{
 
 	background: linear-gradient(to right, #2B1B5E, #3A257D 2%, #3A257D 98%,#2B1B5E 100%);
 }
-
 .contents-header{
 	font-size: 24px;
 	display: flex;
@@ -168,125 +167,61 @@ a{
 
 
 
-/*앨범 내용 미리보기*/
-.photo-section{
-	position: relative;
+.write{
+	width: 1400px;
+	height: 740px;
+
+	background-color: #FF217E;
 }
 
-.photo-section > ul{
-	height: 686px;
-	display: flex;
-	flex-direction: column;
+
+table{
+	margin: 0 auto;
 }
-
-.ulrow{
-	display: flex;
-	flex-direction: row;
-	height: 343px;
-}
-
-li{
-	height: 343px;
-
-	padding: 0px 23px;
-	
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
-
-a{
-	text-decoration-line: none;
-}
-
-.preview-text{
-	padding-right: 30px;
-}
-
-/*글 제목*/
-.preview-title{
-	color: black;
-	width: 312px;
-	height: 96px;
-	max-width: 312px;
-	max-height: 96px;
+input{
+	width: 1200px;
+	height: 64px;
 	font-size: 48px;
-
-	overflow : hidden;
-	text-overflow : ellipsis;
-	word-wrap : break-word; 
-	text-align : left; 
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-
-	text-decoration-line: none;
+	margin: 5px auto;
 }
-
-
-/*글 내용 약간*/
-.preview-detail{
-	display: block;
-	width: 312px;
-	height: 96px;
-	max-width: 312px;
-	max-height: 96px;
-	font-size: 24px;
-	color: #2B2828;
-
-	overflow : hidden;
-	text-overflow : ellipsis;
-	word-wrap : break-word; 
-	text-align : left; 
-	display: -webkit-box;
-	-webkit-line-clamp: 4;
-	-webkit-box-orient: vertical;
-
-	margin-top: 10px;
-	text-decoration-line: none;
+textarea{
+	height: 480px;
+	font-size: 48px !important;
 }
-
-/*앨범 사진*/
-.preview-photo{
-	width: 300px;
-	height: 300px;
-	background-size: 300px;
-
-	background-image: url(../contents/젭삐\ 배경\ 있는\ 거.jpg);
-}
-/*앨범 내용 미리보기 끝*/
-
-
-
-/*다음 페이지로 넘어가기*/
-.next{
-	height: 76px;
-
+label{
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-
 	font-size: 36px;
+	text-align: center;
+	margin-right: 10px;
+	color: #FFFFFF;
 }
 
-.next-area{
+
+textarea{
+	width: 1200px;
+}
+
+
+.upload{
+	position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.upload{
 	display: flex;
-	flex-direction: row;
-	width: 227px;
-
-	justify-content: space-between;
-	align-items: center;
-	color: white;
-
 }
 
-.direction{
-	text-decoration-line: underline;
-}
+button{
+	width: 164px;
+    height: 78px;
 
-.number{
-	font-size: 48px;
+    font-size: 48px;
+    
+    color: #2B1B5E;
+    background-color: #ffffff8a;
+}
+.btn-reset{
+	margin-left: 30px;
 }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jebppi</title>
+    <link rel="stylesheet" href="./album-write.css">
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <div class="banner-photo"></div>
+            <div class="banner-title">
+                <span id="span1">JEBPPI's PHOTOS</span>
+                <span id="span2">그와 우리만의 비밀 공간 ❤</span>
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="contents-header">
+                <div class="contents-header">
+                    <span><a href="">< 앨범페이지로 가기</a></span>
+                </div>
+            </div>
+            
+            <div  class="main-area">
+                <div class="preview-area">
+                    <div class="preview-photo"></div>
+                </div>
+
+                <div class="up">
+                    <form id="uploadForm" action="Album_page.jsp" method="post" enctype="multipart/form-data">
+                        <input class="upload-area" type="file" name="photo" accept="image/*">
+                        <div class="sm"><button class="smtxt" type="submit">사진 업로드</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./album-write.js"></script>
+</body>
+</html>

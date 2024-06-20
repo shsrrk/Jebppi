@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jebppi</title>
+    <link rel="stylesheet" href="./notice-detail.css">
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <div class="banner-photo"></div>
+            <div class="banner-title">
+                <span id="span1">JEBPPI's 공지</span>
+                <span id="span2">각종 이벤트, 콘서트 일정등을 공유하는 공간입니다.</span>
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="contents-header">
+                <span><a href="">< 홈으로 가기</a></span>
+                <div class="notice-writer">
+                    <span>작성자:</span><span></span>
+                    <span>|</span>
+                    <span>작성일:</span><span></span>
+                </div>
+            </div>
+            
+            <div  class="main-area">
+                <div class="notice-area">
+                    <div class="notice-title">
+                        <span>제목:</span><span></span>
+                    </div>
+                    <div class="notice-detail">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-area">
+                        <span>진영아사랑해 : 와 생각만해도 설레 그런데 여기서 줄바꿈을 하는 아주 긴 문장이 나오면 어떻게 되는 거죠? 그걸 해결하기 위해 제가 있습니다!</span><br>
+                        <span>진영아사랑해 : 와 생각만해도 설레</span><br>
+                        <span>진영아사랑해 : 와 생각만해도 설레</span><br>
+                        <span>진영아사랑해 : 와 생각만해도 설레</span><br>
+                    </div>
+
+                    <form action="PostComment.jsp" method="post">
+                        <input type="hidden" name="noticeId" value="<%= noticeId %>">
+                        <input type="hidden" name="username" value="<%= (String) session.getAttribute("id") %>">
+                        <div class="comment-s-area">
+                            <textarea id="commentContent" name="commentContent" rows="4" cols="50" required></textarea><br><br>
+                            <button type="submit">댓글 작성</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./notice-detail.js"></script>
+</body>
+</html>
